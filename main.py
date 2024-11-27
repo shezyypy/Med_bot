@@ -1,5 +1,4 @@
 import asyncio
-import logging
 from datetime import datetime
 
 from aiogram import Bot, Dispatcher, F
@@ -276,7 +275,6 @@ async def depression(callback: CallbackQuery):
 
 
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
